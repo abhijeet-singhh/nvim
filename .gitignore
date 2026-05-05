@@ -1,0 +1,69 @@
+# ==============================================================================
+# Neovim Config — .gitignore
+# ==============================================================================
+
+# Lock file (commit this if you want reproducible plugin versions across machines)
+# Remove the next line if you want to track it
+lazy-lock.json
+
+# ==============================================================================
+# Plugin / Package Manager
+# ==============================================================================
+
+# Lazy.nvim clones plugins here — never commit these
+lazy/
+
+# Mason installs LSP servers, formatters, linters here
+mason/
+
+# ==============================================================================
+# Cache & State (Neovim runtime data, not config)
+# ==============================================================================
+
+# Neovim's built-in state/cache (usually in ~/.local, but just in case)
+*.shada
+*.shada.tmp.*
+
+# Swap, backup, undo files if someone sets them inside the config dir
+*.swp
+*.swo
+*~
+*.bak
+
+# ==============================================================================
+# LSP & Tool Artifacts
+# ==============================================================================
+
+# Lua language server generated files
+.luarc.json
+.luacheckrc
+
+# Stylua config (keep this if you add one, remove from ignore)
+# .stylua.toml
+
+# ==============================================================================
+# OS & Editor Noise
+# ==============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+.Trash-*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# JetBrains / VSCode (if you ever open this folder in them)
+.idea/
+.vscode/
+
+# ==============================================================================
+# Logs & Temp
+# ==============================================================================
+
+*.log
+*.tmp
